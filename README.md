@@ -3,7 +3,7 @@ __WDYM__ stands for "What do you mean ?"
 It is a google extension that enables you to get definitions
 and pronunciations of words.
 ___
-WDYM uses [Dictionary API](https://dictionaryapi.com/products/index) to get defnitions and Chrome talk to speech API to get audio pronunciations.
+WDYM uses [Dictionary API](https://dictionaryapi.com/products/index) to get definitions and Chrome talk to speech API to get audio pronunciations.
 
 It can perform same task using three ways depending upon users need.
 
