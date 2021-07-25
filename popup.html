@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What do you mean?</title>
+    <style>
+        *{
+            font-family: 'Times New Roman',serif;
+        }
+        #speak:hover {
+            cursor: pointer;
+            fill: #252525;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="width: 300px;">
+    <h3>WDYM- any website's pocket dictionary</h3>
+    <form id="form">
+    <input type="text" id="word" placeholder="Enter a word" required><br><br>
+    <button type="submit" id="submit_button">Submit</button>
+    </form>
+
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 226 226"
+        style=" fill:#000000;" id="speak">
+        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,226v-226h226v226z" fill="none" stroke="none" stroke-width="1"></path>
+            <g fill="#000000" stroke="none" stroke-width="1">
+                <path
+                    d="M113,28.25l-56.5,56.5h-37.66667v56.5h37.66667l56.5,56.5zM131.83333,29.18799v18.83333c30.01563,4.41406 53.41705,28.6983 56.22412,58.87255c0.18714,2.01163 0.27588,4.04623 0.27588,6.10612c0,32.95833 -24.48333,60.27035 -56.5,64.97868v18.83333c42.375,-4.70833 75.33333,-40.49535 75.33333,-83.81202c0,-43.31667 -32.95833,-79.10368 -75.33333,-83.81201zM131.83333,66.85466v19.77132c11.3,3.76667 18.83333,14.13236 18.83333,26.37402c0,12.24167 -7.53333,22.60735 -18.83333,26.37402v19.77133c21.65833,-4.70833 37.66667,-23.54535 37.66667,-46.14535c0,-22.6 -16.00833,-41.43701 -37.66667,-46.14534z">
+                </path>
+            </g>
+            <g fill="#cccccc" stroke="none" stroke-width="1">
+                <path d="M126.195,95.94v3.7h-10.97v30.42h-4.48v-30.42h-10.94v-3.7z"></path>
+            </g>
+            <path d="M89.805,140.06v-54.12h46.39v54.12z" fill="#ff0000" stroke="#50e3c2" stroke-width="3" opacity="0">
+            </path>
+        </g>
+    </svg>
+
+
+    <div id="meaning"></div>
+
+    <script src="popup.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
