@@ -9,7 +9,7 @@ var meaning = document.createElement("span");
     meaning.setAttribute("class", "meaning");
     meaning.setAttribute("id", "meaning");
     meaning.setAttribute("title", "Lookup Word");
-    meaning.setAttribute("style","width:300px;background:yellow;color:black;z-index:1;position:absolute;display:block;font-family:'Times New Roman', serif;");
+    meaning.setAttribute("style","width:300px;background:yellow;color:black;z-index:1;position:absolute;display:block;font-family:'Times New Roman', serif;box-shadow: 5px 10px 8px #888888;");
     getData(selectedText);
     async function getData(word) {
         // Ajax call
@@ -20,7 +20,7 @@ var meaning = document.createElement("span");
         //no_results
         if (!data.length) {
             //console.log('no result found');
-            meaning.innerHTML=`<div style="box-shadow: 5px 10px 8px #888888;"><h3>No result found</h3></div>`;
+            meaning.innerHTML=`<div><h3>No result found</h3></div>`;
         }
         
         //if result is suggestions
@@ -31,12 +31,12 @@ var meaning = document.createElement("span");
                 console.log(element);
                 text=text+element+", ";
             })
-            meaning.innerHTML=`<div style="box-shadow: 5px 10px 8px #888888;"><p style="margin:0"><h3>Did you mean?</h3><p style="margin:0">${text}</p></div>`;
+            meaning.innerHTML=`<div><p style="margin:0"><h3>Did you mean?</h3><p style="margin:0">${text}</p></div>`;
         }
         else{
             definition=data[0].shortdef[0];
             if(definition!=undefined){
-            meaning.innerHTML=`<div style="box-shadow: 5px 10px 8px #888888;"><p style="margin:0"><strong>Definition:</strong> ${definition}</p></div>`;
+            meaning.innerHTML=`<div><p style="margin:0"><strong>Definition:</strong> ${definition}</p></div>`;
             }
         }
     }
