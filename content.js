@@ -4,7 +4,6 @@ document.addEventListener("mouseup",()=>{
 if (!selection.isCollapsed){
     let selectedText=selection.toString()
     
-console.log(selectedText);
 var meaning = document.createElement("span");
     meaning.setAttribute("class", "meaning");
     meaning.setAttribute("id", "meaning");
@@ -28,7 +27,6 @@ var meaning = document.createElement("span");
             //console.log("did u mean?");
             let text="";
             data.forEach(element => {
-                console.log(element);
                 text=text+element+", ";
             })
             meaning.innerHTML=`<div><p style="margin:0"><h3>Did you mean?</h3><p style="margin:0">${text}</p></div>`;
